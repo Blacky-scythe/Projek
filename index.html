@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jersey+10&family=Jersey+15&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+    #backcode {
+        position: absolute;
+        left: -0%;
+        color: transparent;
+    }
+
+
+    #peringataninternetdiv {
+        position: absolute;
+        display: flex;
+        left: 32vw;
+        top: 40%;
+        width: 50%;
+        z-index: 400;
+    }
+
+    #bginternet {
+        position: absolute;
+        width: 35vw;
+        height: 8.5vw;
+        background-color: red;
+        opacity: 0.4;
+        border: 2px solid white;
+    }
+
+    #teksinternet {
+        position: absolute;
+        left: 1.5%;
+        color: white;
+        font-weight: bold;
+    }
+
+    #tryagain {
+        position: absolute;
+        left: 59vw;
+        top: 30vw;
+        width: 8vw;
+        height: 2.3vw;
+        background: red;
+        color: white;
+        z-index: 500;
+    }
+
+        /* dasar dasar */
+
+        body {
+            overflow: hidden;
+        }
+
+        #bgbasic {
+            position: absolute;
+            top: 7.8vw;
+            left: 50vw;
+            height: 36vw;
+            width: 33.5vw;
+            background: white;
+            box-shadow: 0px 10px 40px black;
+            border-radius: 0px 30px 30px 0px;
+            border: none;
+        }
+        
+        #bg1 {
+            position: absolute;
+            top: 7.8vw;
+            left: 15.4vw;
+            background: black;
+            height: 36vw;
+            width: 34.5vw;
+            border-radius: 30px 0px 0px 30px;
+            box-shadow: 0px 10px 40px black;
+            z-index: 1;
+        }
+
+        #bg2 {
+            position: absolute;
+            top: -3.3vw;
+            left: 29.6vw;
+            background: white;
+            height: 36vw;
+            width: 34vw;
+            border: 2px solid black;
+            border-radius: 0px 30px 30px 0px;
+        }
+
+        #pembukadiv {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 11.1vw;
+            left: 20vw;
+            z-index: 1;      
+        }
+
+        #login {
+            position: absolute;
+            top: 17vw;
+            left: 34.7vw;
+            background-color: blueviolet;
+            width: 24vw;
+            height: 2vw;
+            color: white;
+            border: none;
+            transition: 1s;
+        }
+
+        #signin {
+            position: absolute;
+            top: 20vw;
+            left: 34.7vw;
+            background-color: blueviolet;
+            width: 24vw;
+            height: 2vw;
+            color: white;
+            border: none;
+            transition: 1s;
+        }
+
+        #login:hover {
+            scale: 1.05;
+            transition: 1s;
+        }
+
+        #signin:hover {
+            scale: 1.05;
+            transition: 1s;
+        }
+
+        #garis {
+            position: absolute;
+            top: 22.5vw;
+            left: 30vw;
+            width:33.4%;
+            height: 0.1vw;
+            border: none;
+            background: black;
+        }
+
+        #or {
+            position: absolute;
+            top: 22.5vw;
+            left: 44.6vw;
+            border: none;
+            color: rgb(51, 51, 51);
+            background: white;
+            padding: 1px 20px;
+        }
+
+        #simbol {
+            position: absolute;
+            background: url('foto/yy.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 22vw;
+            left: 47.5vw;
+            padding: 45px 45px;
+            border-radius: 150px;
+            border: none;
+            transform: rotate(180deg);
+            z-index: 2;
+        }
+
+        #kata1 {
+            position: absolute;
+            top: -2vw;
+            left: 43.5vw;
+            font-size: 1vw;
+            font-weight: bolder;
+            font-family: roboto;
+        }
+
+        #kata2 {
+            position: absolute;
+            text-align: center;
+            top: 0vw;
+            left: 36.5vw;
+            font-size: 1vw;
+            font-weight: bolder;
+            font-family: roboto;
+        }
+
+
+
+
+        /* logo medsos */
+        #pengisi {
+            top: 9vw;
+            left: 2vw;
+            position: absolute;
+            width: 15vw;
+            height: 8vw;
+            z-index: 1;
+        }
+
+        #logo1{
+            position: absolute;
+            top: 380%;
+            left: 90%;
+            width: 2vw;
+            height: 2vw;
+            margin-left: 1vw; 
+            border-radius: 100px;
+            background: url('foto/discord.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            transition: 1s;
+        }        
+
+        #logo2{
+            position: absolute;
+            top: 380%;
+            left: 105%;
+            width: 2vw;
+            height: 2vw;
+            margin-left: 1.5vw; 
+            border-radius: 100px;
+            background: url('foto/instagram.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            transition: 1s;
+        }
+
+        #logo3{
+            position: absolute;
+            top: 380%;
+            left: 120%;
+            width: 2vw;
+            height: 2vw;
+            margin-left: 2vw; 
+            border-radius: 100px;
+            background: url('foto/facebook.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: none;
+            transition: 1s;
+        }
+
+        #logo4{
+            position: absolute;
+            top: 380%;
+            left: 135%;
+            width: 2vw;
+            height: 2vw;
+            margin-left: 2.5vw; 
+            border-radius: 100px;
+            background: url('foto/x.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            transition: 1s;
+        }
+
+        #logo5{
+            position: absolute;
+            top: 380%;
+            left: 150%;
+            width: 2vw;
+            height: 2vw;
+            margin-left: 3vw; 
+            border-radius: 100px;
+            background: url('foto/wa.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            transition: 1s;
+        }
+
+        #logo1:hover{
+            scale: 1.15;
+        }
+
+        #logo2:hover{
+            scale: 1.15;
+        }
+
+        #logo3:hover{
+            scale: 1.15;
+        }
+
+        #logo4:hover{
+            scale: 1.15;
+        }
+
+        #logo5:hover{
+            scale: 1.15;
+            transition: 1s;
+        }
+
+
+        /* login */
+
+        #back {
+            position: absolute;
+            top: 32vw;
+            left: 2.5vw;
+            width: 9vw;
+            height: 2.7vw;
+            border-radius: 10px;
+            background: blueviolet;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #enter {
+        position: absolute;
+            top: 32vw;
+            left: 22vw;
+            width: 9vw;
+            height: 2.7vw;
+            border-radius: 10px;
+            background: blueviolet;
+            transition: 1s;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #enter2 {
+        position: absolute;
+            top: 32vw;
+            left: 22vw;
+            width: 9vw;
+            height: 2.7vw;
+            border-radius: 10px;
+            background: blueviolet;
+            transition: 1s;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #back:active {
+            scale: 0.8;
+            transition: 1s;
+        }
+
+        #enter:active {
+            scale: 0.8;
+            transition: 1s;
+        }
+
+        #enter2:active {
+            scale: 0.8;
+            transition: 1s;
+        }
+
+        #logindiv {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #katapilihan {
+            position: absolute;
+            top: 1.5vw;
+            left: 2.5vw;
+            font-family: roboto;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #username {
+            position: absolute;
+            top: 4vw;
+            left: 2.5vw;
+            width: 24vw;
+            height: 2vw;
+            border: 2px solid transparent;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+
+        #email {
+            display: none;
+            position: absolute;
+            top: 7vw;
+            left: 2.5vw;
+            width: 24vw;
+            height: 2vw;
+            border: 2px solid transparent;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+
+        #password {
+            position: absolute;
+            top: 10vw;
+            left: 2.5vw;
+            width: 24vw;
+            height: 2vw;
+            border: 2px solid transparent;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+       
+
+        #repassword {
+            display: none;
+            position: absolute;
+            top: 13vw;
+            left: 2.5vw;
+            width: 24vw;
+            height: 2vw;
+            border: 2px solid transparent;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+        
+        #jenis_kelamin {
+            display: none;
+            position: absolute;
+            top: 16.5vw;
+            left: 4vw;
+            width: 10vw;
+            height: 2vw;
+            border: 2=1px solid black;
+            outline: none;
+        }
+
+        #notelp {
+            display: none;
+            position: absolute;
+            top: 16.5vw;
+            left: 17vw;
+            width: 10vw;
+            height: 1.6vw;
+            border: 1px solid black;
+            outline: none;
+        }
+
+        #peringatan {
+            position: absolute;
+            top: 9.4vw;
+            font-family: roboto;
+            font-size: 13px;
+            color: red;
+            text-align: left;
+            left: 2.5vw;
+        }
+
+        #forget {
+            display: none;
+            position: absolute;
+            top: 10vw;
+            left: 21.5vw;
+            text-decoration: none;
+        }
+
+        #tanggal {
+            position: absolute;
+            display: none;
+            top: 40%;
+            left: 20%;
+            height: 5.5%;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 20px black;
+            background: white;
+        }
+
+        #jenis_kelamin {
+            display: none;
+        }
+
+        #kata_sambutan {
+            top: 8.5vw;
+            left: 17vw;
+            position: absolute;
+            width: 15vw;
+            height: 8vw;
+            z-index: 1;
+            color: white;
+            font-family: roboto;
+            font-size: 1.2vw;
+            font-weight: bold;
+        }
+
+        #kata_pendukung_sambutan {
+            top: 11vw;
+            left: 17vw;
+            position: absolute;
+            width: 15vw;
+            height: 8vw;
+            z-index: 1;
+            color: white;
+            font-family: roboto;
+            font-size: 0.8vw;
+            text-align: left;
+        }
+
+        #google {
+            position: absolute;
+            top: 24vw;
+            left: 34.7vw;
+            background-color: white;
+            width: 24vw;
+            height: 2vw;
+            color: black;
+            border: none;
+            transition: 1s;
+            text-align: left;
+            padding-left: 2.5vw;
+            border: 2px solid black;
+        }
+
+        #github {
+             position: absolute;
+            top: 26.5vw;
+            left: 34.7vw;
+            background-color: white;
+            width: 24vw;
+            height: 2vw;
+            color: black;
+            border: none;
+            transition: 1s;
+            text-align: left;
+            padding-left: 2.5vw;
+            border: 2px solid black;
+        }
+
+        #microsoft {
+            position: absolute;
+            top: 29vw;
+            left: 34.7vw;
+            background-color: white;
+            width: 24vw;
+            height: 2vw;
+            color: black;
+            border: none;
+            transition: 1s;
+            text-align: left;
+            padding-left: 2.5vw;
+            border: 2px solid black;
+        }
+
+        #google:active {
+            scale: 0.8;
+            transition: 1s;
+        }
+
+        #github:active, #akun2:active {
+            scale: 0.8;
+            transition: 1s;
+        }
+
+        #microsoft:active, #akun3:active {
+            scale: 0.8;
+            transition: 1s;
+        }
+
+        #akun1 {
+            position: absolute;
+            top: 24.25vw;
+            left: 35vw;
+            background: url('foto/google.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1.5vw;
+            height: 1.5vw;
+            border-radius: 30vw;
+            border: none;
+            transition: 1s;
+        }
+
+        #akun2 {
+            position: absolute;
+            top: 26.75vw;
+            left: 35vw;
+            background: url('foto/github.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1.5vw;
+            height: 1.5vw;
+            border-radius: 30vw;
+            border: none;
+            transition: 1s;
+        }
+
+        #akun3 {
+            position: absolute;
+            top: 29.25vw;
+            left: 35vw;
+            background: url('foto/microsoft.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1.5vw;
+            height: 1.5vw;
+            border-radius: 30vw;
+            border: none;
+            transition: 1s;
+        }
+
+        #sukses {
+            position: absolute;
+            top: 22vw;
+            left: 37.6vw;
+            z-index: 3;
+            display: none;
+        }
+
+        #simbol_sukses {
+        position: absolute;
+        left: 11vw;
+        display: inline-block;
+        width: 2vw;
+        height: 2vw;
+        background-repeat: no-repeat;
+        border: none;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2339ff00' d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z'/%3E%3C/svg%3E");
+        }
+
+        #teks_sukses {
+        position: absolute;
+        top: 1.6vw;
+        width: 42vw;
+        font-family: roboto;
+        font-size: 1vw;
+        font-weight: bold;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="backcode">
+        <p id="backcode1">1</p>
+        <p id="backcode2">2</p>
+        <p id="backcode3">0</p>
+    </div>
+
+
+    <div id="peringataninternetdiv">
+        <button id="bginternet"></button>
+        <p id="teksinternet">ups, it seems you are not connected to the internet<br>try again later :)
+        </p>
+    </div>
+
+    <button id="tryagain">refresh</button>
+
+    <div id="sukses">
+        <button id="simbol_sukses"></button>
+        <p id="teks_sukses">your data has been replay, wait until we get you to our web</p>
+    </div>
+
+
+    
+    <button id="bgbasic"></button>
+
+        <div id="logindiv">
+        <p id="katapilihan"></p>
+        <input type="text" id="username" placeholder="username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="password">
+        <input type="password" id="repassword" placeholder="confirm password">
+        <select id="jenis_kelamin">
+            <option>prefer not to say</option>
+            <option>female</option>
+            <option>male</option>
+        </select>
+        <input type="number" id="notelp" placeholder="your phone number">
+        <p id="peringatan"></p>
+        <a id="forget" href="">forget password?</a>
+
+        <button id="enter">Enter</button>
+        <button id="enter2">Enter</button>
+        <button id="back">Cancel</button>
+            
+        </details>
+
+        </div>
+
+
+
+
+
+        <div id="pembukadiv">
+
+        <hr id="garis">
+        <button id="bg2"></button>
+        <button id="signin">sign-in</button>
+        <button id="login">log-in</button>
+        <hr id="garis">
+        <button id="or">or with</button>
+        <button id="google">Continue with Google<button id="akun1"></button></button>
+        <button id="github">Continue with github<button id="akun2"></button></button>
+        <button id="microsoft">Continue with microsoft<button id="akun3"></button></button>
+        <p id="kata1">  WELCOME :)</p>
+        <p id="kata2"> for best experience please log-in or sign-in first<br></p>
+
+        </div>
+
+        <button id="bg1"></button>
+        <button id="simbol"></button>
+
+        <p id="kata_sambutan">Hello, User</p>
+        <p id="kata_pendukung_sambutan">Welcome to our website, please log-in or sign-in up to enjoy better 
+        and more comfortable experience. We hope you enjoy our website
+        </p>
+
+        <div id="pengisi">
+            <a href=""><button id="logo1"></button></a>
+            <a href=""><button id="logo2"></button></a>
+            <a href=""><button id="logo3"></button></a>
+            <a href=""><button id="logo4"></button></a>
+            <a href=""><button id="logo5"></button></a>
+        </div>
+
+
+
+        
+
+        <script>
+        ///tempat var///
+        var backcode1 = document.getElementById('backcode1')
+        var backcode2 = document.getElementById('backcode2')
+        var backcode3 = document.getElementById('backcode3')
+
+        var logo1 = document.getElementById('logo1')
+        var logo2 = document.getElementById('logo2')
+        var logo3 = document.getElementById('logo3')
+        var logo4 = document.getElementById('logo4')
+        var logo5 = document.getElementById('logo5')
+
+        var google = document.getElementById('google')
+        var github = document.getElementById('github')
+        var microsoft = document.getElementById('microsoft')
+
+        var signin = document.getElementById('signin')
+        var login = document.getElementById('login')
+        var pembukadiv = document.getElementById('pembukadiv')
+        var simbol = document.getElementById('simbol')
+        var bg1 = document.getElementById('bg1')
+        var bg2 = document.getElementById('bg2')
+        var bgbasic = document.getElementById('bgbasic')
+        var pengisi = document.getElementById('pengisi')
+        var back = document.getElementById('back')
+        var katapilihan = document.getElementById('katapilihan')
+        var kata_sambutan = document.getElementById('kata_sambutan')
+        var kata_pendukung_sambutan = document.getElementById('kata_pendukung_sambutan')
+        var username = document.getElementById('username')
+        var password = document.getElementById('password')
+        var repassword = document.getElementById('repassword')
+        var email = document.getElementById('email')
+        var jenis_kelamin = document.getElementById('jenis_kelamin')
+        var notelp = document.getElementById('notelp')
+        var peringatan = document.getElementById('peringatan')
+        var peringataninternetdiv = document.getElementById('peringataninternetdiv')
+        var tryagain = document.getElementById('tryagain')
+        var forget = document.getElementById('forget')
+        var enter = document.getElementById('enter')
+        var enter2 = document.getElementById('enter2')
+
+        var sukses = document.getElementById('sukses')
+        var akun1 = document.getElementById('akun1')
+        var akun4 = document.getElementById('akun2')
+        var akun3 = document.getElementById('akun3')
+
+
+         /// fungsi pengecekan internet ///
+        function updateinternet() {
+        if (navigator.onLine) {
+            peringataninternetdiv.style.display = 'none';
+            tryagain.style.display = 'none';
+        } else {
+            peringataninternetdiv.style.display = 'inline';
+            tryagain.style.display = 'inline';
+        }
+    }
+        window.addEventListener('offline', updateinternet)
+        tryagain.addEventListener('click', function() {
+            updateinternet();
+        })
+
+        updateinternet();
+
+
+
+        /// fungsi utama halaman ///
+        signin.addEventListener('click', function() {
+            pembukadiv.style.zIndex = '0';
+            password.style.top = '10vw';
+            
+            setTimeout(function() {
+            simbol.style.transform = 'rotate(0deg)';
+            simbol.style.transition = '2s';
+            pembukadiv.style.transition = '2s';
+            pembukadiv.style.left = '-13.4%';
+            bg2.style.borderRadius = '30px 0px 0px 30px';
+            bg2.style.transition = '2s';
+            peringatan.style.top = '18.5vw';
+            peringatan.style.left = '3.8vw';
+            katapilihan.textContent = 'SIGN-IN';
+            repassword.style.display = 'inline';
+            email.style.display = 'inline';
+            jenis_kelamin.style.display = 'inline';
+            notelp.style.display = 'inline';
+            forget.style.display = 'none';
+            peringatan.style.display = 'none';
+            enter.style.display = 'none';
+            enter2.style.display = 'inline';
+            kata_pendukung_sambutan.textContent = 'To enter the website please fill the form firts, thank u :)';
+
+            password.value = '';
+            repassword.value = '';
+            username.value = '';
+            email.value = '';
+            notelp.value = '';
+            peringatan.textContent = '';
+
+            }, 2);
+
+            setTimeout(function() {
+                peringatan.style.display = 'inline';
+            }, 50);
+
+            setTimeout(function() {
+                pembukadiv.style.display = 'none';
+            }, 2000);
+
+        });
+
+        login.addEventListener('click', function() {
+            pembukadiv.style.zIndex = '0';
+            password.style.top = '7vw';
+            
+            setTimeout(function() {
+            simbol.style.transform = 'rotate(0deg)';
+            simbol.style.transition = '2s';
+            pembukadiv.style.transition = '2s';
+            pembukadiv.style.left = '-13.4%';
+            bg2.style.borderRadius = '30px 0px 0px 30px';
+            bg2.style.transition = '2s';
+            peringatan.style.top = '9.4vw';
+            peringatan.style.left = '2.5vw';
+            katapilihan.textContent = 'LOG-IN';
+            repassword.style.display = 'none';
+            forget.style.display = 'inline';
+            peringatan.style.display = 'inline';
+            enter.style.display = 'inline';
+            enter2.style.display = 'none';
+            jenis_kelamin.style.display = 'none';
+            notelp.style.display = 'none';
+            kata_pendukung_sambutan.textContent = 'welcome back to our website, to verify its you please fill username and correct password, thank u :)';
+    
+
+            password.value = '';
+            repassword.value = '';
+            username.value = '';
+            peringatan.textContent = '';
+
+            }, 2);
+
+            setTimeout(function() {
+                pembukadiv.style.display = 'none';
+            }, 2000);
+
+        });
+
+        back.addEventListener('click', function() {
+            simbol.style.transform = 'rotate(180deg)';
+            pembukadiv.style.display = 'inline';
+            pembukadiv.style.transition = '2s';
+            bg2.style.borderRadius = '30px 0px 0px 30px';
+            kata_sambutan.textContent = 'Hello, User';
+            kata_pendukung_sambutan.textContent = 'Welcome to our website, please log-in or sign-in up to enjoy better and more comfortable experience. We hope you enjoy our website'
+
+            setTimeout(function() {
+            pembukadiv.style.left = '20%';
+            }, 2);
+
+            setTimeout(function() {
+            bg2.style.borderRadius = '0px 30px 30px 0px';
+            }, 100);
+        });
+
+        /// ngecek data login///
+
+        enter.addEventListener('click', function() {
+            if (password.value === 'halooo') {
+                peringatan.style.color = 'lime';
+                peringatan.textContent = 'Login succesfully :)';
+
+                setTimeout(function() {
+                    success();
+                }, 2000);
+
+            }
+
+
+            else if (password.value === '' && username.value === ''){
+                    peringatan.style.color = 'red';
+                    peringatan.textContent = 'username & password is empty';
+            }
+
+            else if (username.value.includes('0') || username.value.includes('1') || username.value.includes('2') || username.value.includes('3') || username.value.includes('4') || username.value.includes('5') || username.value.includes('6') || username.value.includes('7') || username.value.includes('8') || username.value.includes('9')){
+                peringatan.style.color = 'red';
+                peringatan.textContent = `username can't fill with number`;
+            }
+            else if (username.value === ''){
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'username is empty';
+            }
+            else if (username.value.length <= 4){
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'username is to short';
+            }
+            else if (password.value === ''){
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'password is empty';
+            }
+            else {
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'Password is wrong :(';
+            }
+        });
+
+
+
+
+        /// ngecek data signin///
+        enter2.addEventListener('click', function() {
+            
+
+            if (username.value === '') {
+                    peringatan.style.color = 'red';
+                    peringatan.textContent = 'username is empty';
+            }
+
+            else if (username.value.length <= 4){
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'username is to short';
+            }
+
+            else if (email.value === ''){
+                    peringatan.style.color = 'red';
+                    peringatan.textContent = 'email is empty';
+            }
+
+            else if (password.value === ''){
+                    peringatan.style.color = 'red';
+                    peringatan.textContent = 'password is empty';
+            }
+
+            else if (password.value.length <= 7){
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'password is to short';
+            }
+
+            else if (repassword.value !== password.value) {
+                    peringatan.style.color = 'red';
+                    peringatan.textContent = 'repassword does not match the password';
+            }
+
+            else if (notelp.value === ''){
+                    peringatan.style.color = 'red';
+                    peringatan.textContent = 'phone number is empty';
+            }
+
+            else if (notelp.value.length <= 7){
+                peringatan.style.color = 'red';
+                peringatan.textContent = 'phone number is to short';
+            }
+
+            else if (username.value.includes('0') || username.value.includes('1') || username.value.includes('2') || username.value.includes('3') || username.value.includes('4') || username.value.includes('5') || username.value.includes('6') || username.value.includes('7') || username.value.includes('8') || username.value.includes('9')){
+                peringatan.style.color = 'red';
+                peringatan.textContent = `username can't fill with number`;
+            }
+
+            else if (username.value.length >= 4 && password.value.length >= 7 && repassword.value.length >= 1  && email.value.length >= 1 && notelp.value.length >= 7) {
+                peringatan.style.color = 'lime';
+                peringatan.textContent = 'Login succesfully :)';
+
+                setTimeout(function() {
+                    success();
+                }, 2000);
+
+            }
+            
+        });
+
+
+
+
+        /// buat ngubah teks sambutan seperti input username ///
+
+        username.addEventListener('input', function() {
+
+            kata_sambutan.textContent = 'Hello, ' + username.value;
+        })
+
+
+
+
+
+        /// membuka hyperlink di tab baru ///
+        logo1.addEventListener('click', function() {
+            window.open('https://discord.com/users/blacky08285')
+        })
+
+        logo2.addEventListener('click', function() {
+            window.open('https://www.instagram.com/rearja_slx')
+        })
+
+        logo3.addEventListener('click', function() {
+            window.open('https://www.facebook.com/Ldoe')
+        })
+
+        logo4.addEventListener('click', function() {
+            window.open('https://x.com/rearja_slx?t=Hqg3VPbvydwwbvjwjgrrUw&s=09')
+        })
+
+        logo5.addEventListener('click', function() {
+            window.open('https://wa.me/6281218451096')
+        })
+
+
+
+        google.addEventListener('click', function() {
+            success();
+            akun1.style.scale = '0.8';
+        });
+
+        github.addEventListener('click', function() {
+            success();
+            akun2.style.scale = '0.8';
+        });
+
+        microsoft.addEventListener('click', function() {
+            success();
+            akun3.style.scale = '0.8';
+        })
+
+        function success() {
+            pembukadiv.style.transition = '0s';
+            bg2.style.transition = '0s';
+            pembukadiv.style.display = 'none';
+            bg2.style.display = 'none';
+            bg1.style.display = 'none';
+            bgbasic.style.display = 'none';
+            simbol.style.display = 'none';
+            pengisi.style.display = 'none';
+            enter.style.display = 'none';
+            enter2.style.display = 'none';
+            back.style.display = 'none';
+            username.style.display = 'none';
+            email.style.display = 'none';
+            password.style.display = 'none';
+            repassword.style.display = 'none';
+            forget.style.display = 'none';
+            peringatan.style.display = 'none';
+            jenis_kelamin.style.display = 'none';
+            notelp.style.display = 'none';
+            katapilihan.style.display = 'none';
+
+            sukses.style.display = 'inline';
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /// fungsi keyboard///
+
+
+        /// login board ///
+        
+        if (backcode1.textContent === '1') {
+            username.addEventListener('keydown', function(key1){
+            if (key1.key === 'ArrowDown') {
+                password.focus();
+            }
+            if (key1.key === 'ArrowUp') {
+                password.focus();
+            }
+            if (key1.key === 'Enter') {
+                password.focus();
+            }
+        });
+
+        password.addEventListener('keydown', function(key1){
+            if (key1.key === 'ArrowDown') {
+                username.focus();
+            }
+            if (key1.key === 'ArrowUp') {
+                username.focus();
+            }
+            if (key1.key === 'Enter') {
+                enter.click();
+            }
+        });
+        }
+
+
+
+        /// sign in board ///
+        if (backcode2.textContent === '2') {
+        username.addEventListener('keydown', function(key1){
+            if (key1.key === 'ArrowDown') {
+                password.focus();
+            }
+            if (key1.key === 'ArrowUp') {
+                repassword.focus();
+            }
+            if (key1.key === 'Enter') {
+                password.focus();
+            }
+        });
+
+        password.addEventListener('keydown', function(key1){
+            if (key1.key === 'ArrowDown') {
+                repassword.focus();
+            }
+            if (key1.key === 'ArrowUp') {
+                username.focus();
+            }
+            if (key1.key === 'Enter') {
+                repassword.focus();
+            }
+        });
+
+        repassword.addEventListener('keydown', function(key1){
+            if (key1.key === 'ArrowDown') {
+                username.focus();
+            }
+            if (key1.key === 'ArrowUp') {
+                password.focus();
+            }
+        });
+    }
+
+        
+        
+        
+        </script>
+
+</body>
+</html>
